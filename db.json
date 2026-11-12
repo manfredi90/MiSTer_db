@@ -1,6 +1,11 @@
 {
   "db_id": "manfredi90_ss",
   "files": {
+    "_Console/N64_SS_20261112.rbf": {
+      "hash": "7ab2e61b834ec2350e19153d5ed8d827",
+      "size": 3967988,
+      "url": "https://github.com/manfredi90/N64_MiSTer/releases/download/ss-20261112-a11084a/N64_SS_20261112.rbf"
+    },
     "_Console/NeoGeo_SS_20261112.rbf": {
       "hash": "ce3b3535f9ebff09c615927700ca41fa",
       "size": 3766004,
@@ -15,6 +20,6 @@
   "folders": {
     "_Console": {}
   },
-  "timestamp": 1794496343,
+  "timestamp": 1794498960,
   "v": 1
 }
