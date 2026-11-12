@@ -1,7 +1,15 @@
 {
   "db_id": "manfredi90_ss",
-  "files": {},
-  "folders": {},
-  "timestamp": 1794492020,
+  "files": {
+    "_Console/NeoGeo_SS_20261112.rbf": {
+      "hash": "ce3b3535f9ebff09c615927700ca41fa",
+      "size": 3766004,
+      "url": "https://github.com/manfredi90/NeoGeo_MiSTer/releases/download/ss-20261112-9c839b1/NeoGeo_SS_20261112.rbf"
+    }
+  },
+  "folders": {
+    "_Console": {}
+  },
+  "timestamp": 1794496163,
   "v": 1
 }
