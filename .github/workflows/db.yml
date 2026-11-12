@@ -1,4 +1,4 @@
-# Every hour: rebuild db.json from the latest full release of each core in cores.json
+# Every hour: rebuild db.json from the latest release of each core in cores.json
 # and commit it when it changed.
 name: db
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Build db.json for the MiSTer Downloader from the latest full release of each core in cores.json.
+"""Build db.json for the MiSTer Downloader from the latest release of each core in cores.json.
 
-Pre-releases are left out: a build reaches the MiSTer only once it is promoted to a full release.
+A pre-release, if one is ever made by hand, is left out.
 The timestamp changes only when the set of files does, so the Downloader skips unchanged runs.
 Needs GH_TOKEN (any token that can read public repositories) for the GitHub API.
 """
