@@ -11,9 +11,9 @@ API = "https://api.github.com"
 
 
 def get(url, raw=False):
-    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {os.environ['GH_TOKEN']}",
-                                               "Accept": "application/octet-stream" if raw else "application/vnd.github+json"})
-    with urllib.request.urlopen(req, timeout=120) as r:
+    """API call (JSON), or with raw=True a public download (no token: the redirect goes to another host)."""
+    headers = {} if raw else {"Authorization": f"Bearer {os.environ['GH_TOKEN']}", "Accept": "application/vnd.github+json"}
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=120) as r:
         return r.read() if raw else json.load(r)
 
 
@@ -37,7 +37,7 @@ def main():
             raise
         assets = {a["name"]: a for a in rel["assets"]}
         if "sd-files.json" in assets:  # asset name -> path on the SD card
-            layout = json.loads(get(assets.pop("sd-files.json")["url"], raw=True))
+            layout = json.loads(get(assets.pop("sd-files.json")["browser_download_url"], raw=True))
         else:  # just the core
             layout = {n: f"{folder}/{n}" for n in assets if n.endswith(".rbf")}
         if set(layout) != set(assets) or sum(p.endswith(".rbf") for p in layout.values()) != 1:
@@ -48,7 +48,7 @@ def main():
             if url in known:
                 entry = {k: known[url][k] for k in ("hash", "size", "url")}
             else:
-                data = get(a["url"], raw=True)
+                data = get(url, raw=True)
                 entry = {"hash": hashlib.md5(data).hexdigest(), "size": len(data), "url": url}
             if path in files:
                 sys.exit(f"{path} comes from two cores")
