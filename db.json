@@ -1,6 +1,41 @@
 {
   "db_id": "manfredi90_ss",
   "files": {
+    "Scripts/.megadrive_savestates/maps/4013faa5.map.gz": {
+      "hash": "505f73b56b0af01e25eef50659011d8b",
+      "size": 115303,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/4013faa5.map.gz"
+    },
+    "Scripts/.megadrive_savestates/maps/6a4878fd.map.gz": {
+      "hash": "c43d2739704a88a44b8b134e2517fbf7",
+      "size": 114549,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/6a4878fd.map.gz"
+    },
+    "Scripts/.megadrive_savestates/maps/current": {
+      "hash": "e6a4e2e51cbba8bfe1749d9c09f0ada8",
+      "size": 9,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/current"
+    },
+    "Scripts/.megadrive_savestates/maps/d6b7b40b.map.gz": {
+      "hash": "96232b71b371522198964b14ae21a26c",
+      "size": 115151,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/d6b7b40b.map.gz"
+    },
+    "Scripts/.megadrive_savestates/mdss_convert.py": {
+      "hash": "2486ee86fa260cd475f9ad78d95fc3d0",
+      "size": 8296,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/mdss_convert.py"
+    },
+    "Scripts/megadrive_savestates.sh": {
+      "hash": "fd56420a31ce02fcdb7233c47543f4d2",
+      "size": 361,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/megadrive_savestates.sh"
+    },
+    "_Console/MegaDrive_SS_20261112.rbf": {
+      "hash": "b5e9300684050d9c0d26d66da12eed93",
+      "size": 4412160,
+      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/MegaDrive_SS_20261112.rbf"
+    },
     "_Console/N64_SS_20261112.rbf": {
       "hash": "7ab2e61b834ec2350e19153d5ed8d827",
       "size": 3967988,
@@ -18,8 +53,11 @@
     }
   },
   "folders": {
+    "Scripts": {},
+    "Scripts/.megadrive_savestates": {},
+    "Scripts/.megadrive_savestates/maps": {},
     "_Console": {}
   },
-  "timestamp": 1794498960,
+  "timestamp": 1794508561,
   "v": 1
 }
