@@ -5,11 +5,16 @@
       "hash": "ce3b3535f9ebff09c615927700ca41fa",
       "size": 3766004,
       "url": "https://github.com/manfredi90/NeoGeo_MiSTer/releases/download/ss-20261112-9c839b1/NeoGeo_SS_20261112.rbf"
+    },
+    "_Console/TurboGrafx16_SS_20261112.rbf": {
+      "hash": "60cdce8a444672875eb086ae122608aa",
+      "size": 4325940,
+      "url": "https://github.com/manfredi90/TurboGrafx16_MiSTer/releases/download/ss-20261112-6e1afdb/TurboGrafx16_SS_20261112.rbf"
     }
   },
   "folders": {
     "_Console": {}
   },
-  "timestamp": 1794496163,
+  "timestamp": 1794496343,
   "v": 1
 }
