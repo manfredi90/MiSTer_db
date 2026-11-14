@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Build db.json for the MiSTer Downloader from the latest release of each core in cores.json.
-
-A pre-release, if one is ever made by hand, is left out.
+"""Build db.json for the MiSTer Downloader from the cores each fork in cores.json publishes in
+releases/ on its default branch: releases/ss-files.json gives the path on the SD card of each file.
 The timestamp changes only when the set of files does, so the Downloader skips unchanged runs.
 Needs GH_TOKEN (any token that can read public repositories) for the GitHub API.
 """
@@ -23,28 +22,23 @@ def main():
         old = json.load(open("db.json"))
     except FileNotFoundError:
         old = {"files": {}}
-    known = {f["url"]: f for f in old["files"].values()}  # an asset URL names one tag: same file
+    known = {f["url"]: f for f in old["files"].values()}  # a URL names one commit: same file
 
     files, folders = {}, {}
     for core in cfg["cores"]:
-        repo, folder = core["repo"], core.get("folder", "_Console")
-        try:
-            rel = get(f"{API}/repos/{repo}/releases/latest")
-        except urllib.error.HTTPError as e:
-            if e.code == 404:  # no full release yet
-                print(f"{repo}: no release")
-                continue
-            raise
-        assets = {a["name"]: a for a in rel["assets"]}
-        if "sd-files.json" in assets:  # asset name -> path on the SD card
-            layout = json.loads(get(assets.pop("sd-files.json")["browser_download_url"], raw=True))
-        else:  # just the core
-            layout = {n: f"{folder}/{n}" for n in assets if n.endswith(".rbf")}
-        if set(layout) != set(assets) or sum(p.endswith(".rbf") for p in layout.values()) != 1:
-            sys.exit(f"{repo} {rel['tag_name']}: assets {sorted(assets)} do not match {layout}")
-        for name, path in layout.items():
-            a = assets[name]
-            url = a["browser_download_url"]
+        repo = core["repo"]
+        branch = get(f"{API}/repos/{repo}")["default_branch"]
+        commits = get(f"{API}/repos/{repo}/commits?sha={branch}&path=releases/ss-files.json&per_page=1")
+        if not commits:  # nothing published yet
+            print(f"{repo}: no release")
+            continue
+        sha = commits[0]["sha"]  # the files at that commit: they always match each other
+        raw = f"https://raw.githubusercontent.com/{repo}/{sha}/"
+        layout = json.loads(get(raw + "releases/ss-files.json", raw=True))  # SD path -> repo path
+        if sum(p.endswith(".rbf") for p in layout) != 1:
+            sys.exit(f"{repo} {sha[:7]}: expected one RBF in {sorted(layout)}")
+        for path, src in layout.items():
+            url = raw + src
             if url in known:
                 entry = {k: known[url][k] for k in ("hash", "size", "url")}
             else:
@@ -57,7 +51,7 @@ def main():
             while d:  # every parent folder
                 folders[d] = {}
                 d = os.path.dirname(d)
-        print(f"{repo}: {rel['tag_name']}, {len(layout)} files")
+        print(f"{repo}: {sha[:7]}, {len(layout)} files")
 
     if files == old["files"] and os.path.exists("db.json"):
         print("unchanged")

@@ -1,7 +1,7 @@
 # MiSTer_db
 
-A personal database for the MiSTer Downloader. Each hour `db.json` is rebuilt from the latest
-release of the cores listed in `cores.json`.
+A personal database for the MiSTer Downloader. Each hour `db.json` is rebuilt from the cores
+that the forks listed in `cores.json` publish in their `releases/` folder.
 
 To use it, add this to `/media/fat/downloader.ini`:
 

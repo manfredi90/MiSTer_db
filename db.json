@@ -4,52 +4,52 @@
     "Scripts/.megadrive_savestates/maps/4013faa5.map.gz": {
       "hash": "505f73b56b0af01e25eef50659011d8b",
       "size": 115303,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/4013faa5.map.gz"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/sd/Scripts/.megadrive_savestates/maps/4013faa5.map.gz"
     },
     "Scripts/.megadrive_savestates/maps/6a4878fd.map.gz": {
       "hash": "c43d2739704a88a44b8b134e2517fbf7",
       "size": 114549,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/6a4878fd.map.gz"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/sd/Scripts/.megadrive_savestates/maps/6a4878fd.map.gz"
     },
     "Scripts/.megadrive_savestates/maps/current": {
       "hash": "e6a4e2e51cbba8bfe1749d9c09f0ada8",
       "size": 9,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/current"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/sd/Scripts/.megadrive_savestates/maps/current"
     },
     "Scripts/.megadrive_savestates/maps/d6b7b40b.map.gz": {
       "hash": "96232b71b371522198964b14ae21a26c",
       "size": 115151,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/d6b7b40b.map.gz"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/sd/Scripts/.megadrive_savestates/maps/d6b7b40b.map.gz"
     },
     "Scripts/.megadrive_savestates/mdss_convert.py": {
       "hash": "2486ee86fa260cd475f9ad78d95fc3d0",
       "size": 8296,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/mdss_convert.py"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/sd/Scripts/.megadrive_savestates/mdss_convert.py"
     },
     "Scripts/megadrive_savestates.sh": {
       "hash": "fd56420a31ce02fcdb7233c47543f4d2",
       "size": 361,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/megadrive_savestates.sh"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/sd/Scripts/megadrive_savestates.sh"
     },
     "_Console/MegaDrive_SS_20261112.rbf": {
       "hash": "b5e9300684050d9c0d26d66da12eed93",
       "size": 4412160,
-      "url": "https://github.com/manfredi90/MegaDrive_MiSTer/releases/download/ss-20261112-cf7ea4c/MegaDrive_SS_20261112.rbf"
+      "url": "https://raw.githubusercontent.com/manfredi90/MegaDrive_MiSTer/eac64f9375dfb86b3bdb90d91fa1f3e8f6ef1207/releases/MegaDrive_SS_20261112.rbf"
     },
     "_Console/N64_SS_20261112.rbf": {
       "hash": "7ab2e61b834ec2350e19153d5ed8d827",
       "size": 3967988,
-      "url": "https://github.com/manfredi90/N64_MiSTer/releases/download/ss-20261112-a11084a/N64_SS_20261112.rbf"
+      "url": "https://raw.githubusercontent.com/manfredi90/N64_MiSTer/46d38c12df0f5fd65d186aa4505cc8d691f9b58c/releases/N64_SS_20261112.rbf"
     },
     "_Console/NeoGeo_SS_20261112.rbf": {
       "hash": "ce3b3535f9ebff09c615927700ca41fa",
       "size": 3766004,
-      "url": "https://github.com/manfredi90/NeoGeo_MiSTer/releases/download/ss-20261112-9c839b1/NeoGeo_SS_20261112.rbf"
+      "url": "https://raw.githubusercontent.com/manfredi90/NeoGeo_MiSTer/035befb65e7dac2b226519e0c6bf35480c58fa60/releases/NeoGeo_SS_20261112.rbf"
     },
     "_Console/TurboGrafx16_SS_20261112.rbf": {
       "hash": "60cdce8a444672875eb086ae122608aa",
       "size": 4325940,
-      "url": "https://github.com/manfredi90/TurboGrafx16_MiSTer/releases/download/ss-20261112-6e1afdb/TurboGrafx16_SS_20261112.rbf"
+      "url": "https://raw.githubusercontent.com/manfredi90/TurboGrafx16_MiSTer/4571202fccc512088df419263ca433dd65039e61/releases/TurboGrafx16_SS_20261112.rbf"
     }
   },
   "folders": {
@@ -58,6 +58,6 @@
     "Scripts/.megadrive_savestates/maps": {},
     "_Console": {}
   },
-  "timestamp": 1794508561,
+  "timestamp": 1794650233,
   "v": 1
 }
