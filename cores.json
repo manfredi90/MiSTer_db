@@ -1,9 +1,9 @@
 {
   "db_id": "manfredi90_ss",
   "cores": [
-    {"repo": "manfredi90/TurboGrafx16_MiSTer"},
-    {"repo": "manfredi90/MegaDrive_MiSTer"},
-    {"repo": "manfredi90/NeoGeo_MiSTer"},
-    {"repo": "manfredi90/N64_MiSTer"}
+    {"repo": "manfredi90/TurboGrafx16_MiSTer_SS"},
+    {"repo": "manfredi90/MegaDrive_MiSTer_SS"},
+    {"repo": "manfredi90/NeoGeo_MiSTer_SS"},
+    {"repo": "manfredi90/N64_MiSTer_SS"}
   ]
 }
